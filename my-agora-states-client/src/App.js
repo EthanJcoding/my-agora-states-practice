@@ -9,6 +9,7 @@ function App() {
     getDiscussion();
   }, []);
 
+
   const getDiscussion = () => {
     return fetch(domain + "/discussions")
       .then((res) => res.json())
